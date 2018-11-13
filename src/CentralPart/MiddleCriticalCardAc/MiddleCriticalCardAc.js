@@ -7,7 +7,7 @@ function MiddleCriticalCardAc(props) {
 			<div className="card_top">
 				<img className="icons" alt="" src={`/assets/${props.event.icon}.svg`} />
                 <div className="title">
-                    {props.event.titte}
+                    {props.event.title}
                 </div>
 				<img className="cross" alt="" src="/assets/cross.svg" />
 			</div>

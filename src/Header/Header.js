@@ -8,7 +8,7 @@ function Header() {
         <header>
             <div className="logo"></div>
             <label htmlFor="menu" className="menu_icon"></label>
-            <input type="checkbox" className="menu"></input>
+            <input type="checkbox" className="menu" defaultChecked={false} id="menu"></input>
             <nav>
                 <ul>
                     {listItems}

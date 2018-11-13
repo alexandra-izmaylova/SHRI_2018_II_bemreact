@@ -15,42 +15,14 @@ const eventsInfo = Events.events;
 
 class CentralPart extends Component {
     render() {
-        const event = eventsInfo.map(event => {
-            if(event.size === 's') {
-                return (
-                    <SmallCard event={event} />
-                )
-            }
-            else if (event.icon === 'stats') {
-                return (
-                    <LargeCardStats event={event} />
-                )
-            }
-            else if (event.icon === 'thermal') {
-                return (
-                    <MiddleCardThermal event={event} />
-                )
-            }
-            else if (event.icon === 'ac') {
-                return (
-                    <MiddleCriticalCardAc event={event} />
-                )
-            }
-            else if(event.icon === 'music') {
-                return(
-                    <MiddleCardMusic event={event} />
-                )
-            }
-            else if(event.icon === 'fridge') {
-                return(
-                    <MiddleCardFridge event={event} />
-                )
-            }
-            else if(event.icon === 'cam') {
-                return(
-                    <LargeCriticalCardCam event={event} />
-                )
-            }
+        const event = eventsInfo.map((event, index) => {
+            if (event.size === 's') return (<SmallCard event={event} key={index}/>)
+            if (event.icon === 'stats') return (<LargeCardStats event={event} key={index}/>)
+            if (event.icon === 'thermal') return (<MiddleCardThermal event={event} key={index}/>)
+            if (event.icon === 'ac') return (<MiddleCriticalCardAc event={event} key={index}/>)
+            if (event.icon === 'music') return(<MiddleCardMusic event={event} key={index}/>)
+            if (event.icon === 'fridge') return(<MiddleCardFridge event={event} key={index}/>)
+            if (event.icon === 'cam') return(<LargeCriticalCardCam event={event} key={index}/>)
             return null;
             
         })

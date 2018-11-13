@@ -6,7 +6,7 @@ function MiddleCardFridge(props) {
     return <div className="card card_size-m">
 			<div className="card_top">
 				<img className="icons" alt=""  src={`/assets/${props.event.icon}.svg`} />
-				<div className="title">{props.event.titte}</div>
+				<div className="title">{props.event.title}</div>
 			<img className="cross" alt=""  src="/assets/cross.svg" />
 			</div>
 			<div className="devices_and_time">

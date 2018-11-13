@@ -8,7 +8,7 @@ function MiddleCardMusic(props) {
             <div className="card_top">
                 <img className="icons" alt="" src={`/assets/${props.event.icon}.svg`} />
                 <div className="title">
-                    {props.event.titte}
+                    {props.event.title}
                 </div>
                 <img className="cross" alt="" src="/assets/cross.svg" />
             </div>
@@ -30,7 +30,7 @@ function MiddleCardMusic(props) {
                         {`${props.event.data.artist} - ${props.event.data.track.name}`} 
                     </div>
                         <div className="range_and_time">
-                            <input type="range" min="0" max="271" step="2" value="50" className="range" />
+                            <input type="range" min="0" max="271" step="2" defaultValue="50" className="range" />
                                 <div className="details">
                                     {props.event.data.track.length}
                                 </div>
@@ -40,7 +40,7 @@ function MiddleCardMusic(props) {
             <div className="control_panel">
                 <img className="key prev" alt="" src="/assets/Prev.svg" />
                 <img className="key next" alt="" src="/assets/Prev.svg" />
-                <input type="range" min="0" max="271" step="2" value="50" className="range_1" />
+                <input type="range" min="0" max="271" step="2" defaultValue="50" className="range_1" />
                 <div className="details">
                     {`${props.event.data.volume} %`}
                 </div>
