@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Footer} from '../Footer/Footer.js';
-import '../Page.css';
 import './CentralPart.css';
+import './Card.css';
 import Events from './events.json';
 import { LargeCardStats } from './LargeCardStats/LargeCardStats.js';
 import { LargeCriticalCardCam } from './LargeCriticalCardCam/LargeCriticalCardCam.js';
@@ -51,6 +51,7 @@ class CentralPart extends Component {
                     <LargeCriticalCardCam event={event} />
                 )
             }
+            return null;
             
         })
         return (

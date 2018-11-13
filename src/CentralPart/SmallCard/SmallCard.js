@@ -5,11 +5,11 @@ function SmallCard(props) {
     return (
         <div className="card card_size-s">
             <div className="card_top">
-                <img className="icons" alt="" src={`../assets/${props.event.icon}.svg`}></img>
+                <img className="icons" alt="" src={`/assets/${props.event.icon}.svg`}></img>
                 <div className="title">
                     {props.event.title}
                 </div>
-                <img className="cross" alt="" src="../assets/cross.svg"></img>
+                <img className="cross" alt="" src="/assets/cross.svg"></img>
 		    </div>
             <div className="devices" id="source">
                 {props.event.source}

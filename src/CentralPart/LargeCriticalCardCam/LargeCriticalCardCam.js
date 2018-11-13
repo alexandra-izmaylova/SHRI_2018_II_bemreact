@@ -4,9 +4,9 @@ import './LargeCriticalCardCam.css';
 function LargeCriticalCardCam (props) {
     return <div className="card card_size-l card_type-critical">
 			<div className="card_top">
-				<img className="icons" alt="" src="../assets/cam.svg" />
+				<img className="icons" alt="" src="/assets/cam.svg" />
 				<div className="title">{props.event.title}</div>
-				<img className="cross" alt="" src="../assets/cross-white.svg" />
+				<img className="cross" alt="" src="/assets/cross-white.svg" />
 			</div>
 			<div className="devices_and_time">
 				<div className="card-source" id="source">
@@ -19,7 +19,7 @@ function LargeCriticalCardCam (props) {
 			<div className="card corpus">
 				<div className="description">{props.event.description}</div>
 				<div className="container_image">
-					<img className="camera" alt="" src="../assets/image.jpg" />
+					<img className="camera" alt="" src="/assets/image.jpg" />
 				</div>
 				<div className="user_tools">
 					<div className="brightness">
