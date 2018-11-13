@@ -1,17 +1,5 @@
-.camera {     
+.Camera {     
 	margin-top: 24px;
 	height: auto;
 	width: 100%;
-}
-
-.zoom {
-	margin-top:10px;
-	display: flex;
-	flex-direction: row;
-}
-
-.user_tools {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }

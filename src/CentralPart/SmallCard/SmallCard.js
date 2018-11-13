@@ -1,29 +1,30 @@
 import React from 'react';
 import './SmallCard.css';
+import { cn } from '@bem-react/classname'
+
+const card = cn('Card');
+const cardTop = cn('CardTop');
+const cardBottom = cn('CardBottom');
 
 function SmallCard(props) {
     return (
-        <div className="card card_size-s">
-            <div className="card_top">
-                <img className="icons" alt="" src={`/assets/${props.event.icon}.svg`}></img>
-                <div className="title">
+        <div className={card({ size: 's' })}>
+            <div className={cardTop()}>
+                <img className={cardTop('Icon')} alt="" src={`/assets/${props.event.icon}.svg`}></img>
+                <div className={cardTop('Title')}>
                     {props.event.title}
                 </div>
-                <img className="cross" alt="" src="/assets/cross.svg"></img>
-		    </div>
-            <div className="devices" id="source">
-                {props.event.source}
+                <img className={cardTop('Cross')} alt="" src="/assets/cross.svg"></img>
             </div>
-            <div className="time" id="time">
-                {props.event.time}
-            </div>
-            <div className="card_bottom">
-                <div className="description_size-m">
+            <div className={card('Source')}>{props.event.source}</div>
+            <div className={card('Time')}>{props.event.time}</div>
+            <div className={cardBottom()}>
+                <div className={cardBottom('Description')}>
                     {props.event.description}
                 </div>
             </div>
-	    </div>
+        </div>
     )
 }
 
-export {SmallCard};
+export { SmallCard };

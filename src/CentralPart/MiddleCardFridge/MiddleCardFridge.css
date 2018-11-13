@@ -1,29 +1,32 @@
-.buttons {
+.Buttons {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	margin-top: 32px;
 }
 
-.button {
+.Buttons-ButtonYes {
 	width: 132px;
 	height: 54px;	
 	border-radius: 8px;
 	font-size: 20px;
 	color: #000000;
 	text-align: center;
-}
-
-.button-yes {
 	background-color: #FFD93E;    
 }
 
-.button-no {
+.Buttons-ButtonNo {
+	width: 132px;
+	height: 54px;	
+	border-radius: 8px;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
 	background-color: #E5E5E5;	
 	margin-left: 18px;
 }
 
-.choice {
+.Buttons-Choice {
 	padding: 0;
 	padding-top: 16px;
 	padding-bottom: 16px;
@@ -31,50 +34,32 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 370px)  {
-	.buttons {
+	.Buttons {
 		margin-top: 20px;
 	}
 
-	.button {
-		width: 124px;
-		height: 50px;	
-		font-size: 16px;
-	}
-
-	.button-no {	
+	.Buttons-ButtonNo {	
 		margin-left: 34px;
 	}
 
 }
 
 @media screen and (min-width: 371px) and (max-width: 480px)  {
-	.buttons {
+	.Buttons {
 		margin-top: 20px;
 	}
 
-	.button {
-		width: 124px;
-		height: 50px;	
-		font-size: 16px;
-	}
-
-	.button-no {	
+	.Buttons-ButtonNo {	
 		margin-left: 15px;
 	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 728px)  {
-	.buttons {
+	.Buttons {
 		margin-top: 20px;
 	}
 
-	.button {
-		width: 124px;
-		height: 50px;	
-		font-size: 16px;
-	}
-
-	.button-no {	
+	.Buttons-ButtonNo {	
 		margin-left: 12px;
 	}
 }

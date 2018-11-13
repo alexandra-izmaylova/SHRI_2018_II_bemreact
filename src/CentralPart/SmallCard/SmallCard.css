@@ -1,11 +1,11 @@
-.devices {
+.Card-Source {
 	margin-top: 20px;
 	font-size: 18px;
 	color: #333333;
 	letter-spacing: 0;
 }
 
-.time {
+.Card-Time {
 	font-size: 18px;
 	color: #333333;
 	letter-spacing: 0;
@@ -14,55 +14,55 @@
 
 
 @media screen and (min-width: 631px) and (max-width: 728px) {
-	.devices {
+	.Card-Source {
 		font-size: 14px;
 	}
 
-	.time {
+	.Card-Time {
 		font-size: 14px;
 	}
 }
 
 @media screen and (min-width: 729px) and (max-width: 1066px) {
-	.devices {
+	.Card-Source {
 		font-size: 16px;
 	}
 
-	.time {
+	.Card-Time {
 		font-size: 16px;
 	}
 }
 
 
 @media screen and (min-width: 481px) and (max-width: 630px)  {
-	.devices {
+	.Card-Source {
 		font-size: 14px;
 	}
 
-	.time {
+	.Card-Time {
 		font-size: 14px;
 	}
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 370px)  {
-	.devices {
+	.Card-Source {
 		margin-top: 15px;
 		font-size: 12px;
 	}
 
-	.time {
+	.Card-Time {
 		font-size: 12px;
 	}
 }
 
 @media screen and (min-width: 371px) and (max-width: 480px)  {
-	.devices {
+	.Card-Source {
 		margin-top: 15px;
 		font-size: 14px;
 	}
 
-	.time {
+	.Card-Time {
 		font-size: 14px;
 	}
 }

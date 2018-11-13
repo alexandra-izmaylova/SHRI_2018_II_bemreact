@@ -1,34 +1,40 @@
 import React from 'react';
 import './MiddleCardFridge.css';
+import { cn } from '@bem-react/classname';
+
+const card = cn('Card');
+const cardTop = cn('CardTop');
+const cardBottom = cn('CardBottom');
+const buttons = cn('Buttons');
 
 
 function MiddleCardFridge(props) {
-    return <div className="card card_size-m">
-			<div className="card_top">
-				<img className="icons" alt=""  src={`/assets/${props.event.icon}.svg`} />
-				<div className="title">{props.event.title}</div>
-			<img className="cross" alt=""  src="/assets/cross.svg" />
+	return <div className={card({ size: 'm' })}>
+			<div className={cardTop()}>
+				<img className={cardTop('Icon')} alt="" src={`/assets/${props.event.icon}.svg`} />
+				<div className={cardTop('Title')}>{props.event.title}</div>
+				<img className={cardTop('Cross')} alt="" src="/assets/cross.svg" />
 			</div>
-			<div className="devices_and_time">
-				<div className="card-source" id="source">
+			<div className={card('Info')}>
+				<div>
 					{props.event.source}
 				</div>
-				<div className="card-time" id="time">
+				<div>
 					{props.event.time}
 				</div>
 			</div>
-			<div className="description_size-m">
+			<div className={card('Description')}>
 				{props.event.description}
 			</div>
-			<div className="card_bottom">
-				<div className="buttons">
-					<div className="button button-yes">
-						<div className="choice">
+			<div className={cardBottom()}>
+				<div className={buttons()}>
+					<div className={buttons('ButtonYes')}>
+						<div className={buttons('Choice')}>
 							{props.event.data.buttons[0]}
 						</div>
 					</div>
-					<div className="button button-no">
-						<div className="choice">
+					<div className={buttons('ButtonNo')}>
+						<div className={buttons('Choice')}>
 							{props.event.data.buttons[1]}
 						</div>
 					</div>

@@ -1,27 +1,32 @@
 import React from 'react';
 import './LargeCardStats.css';
+import { cn } from '@bem-react/classname';
+
+const card = cn('Card');
+const cardTop = cn('CardTop');
+const cardBottom = cn('CardBottom');
 
 function LargeCardStats(props) {
-    return <div className="card card_size-l">
-			<div className="card_top">
-				<img className="icons" alt="" src={`/assets/${props.event.icon}.svg`} />
-                <div className="title">
+	return <div className={card({ size: 'l'})}>
+			<div className={cardTop()}>
+				<img className={cardTop('Icon')} alt="" src={`/assets/${props.event.icon}.svg`} />
+                <div className={cardTop('Title')}>
                     {props.event.title}
                 </div>
-				<img className="cross" alt="" src="/assets/cross.svg" />
+				<img className={cardTop('Cross')}  alt="" src="/assets/cross.svg" />
 			</div>
-			<div className="devices_and_time">
-				<div className="card-source" id="source">
+			<div className={card('Info')}>
+				<div>
 					{props.event.source}
 				</div>
-				<div className="card-time" id="time">
+				<div>
 					{props.event.time}
 				</div>
 			</div>
-            <div className="description_size-l">
+            <div className={card('Description')}>
                 {props.event.description}
             </div>
-			<img className="chart" alt ="" src="/assets/Richdata.png" />
+			<img className={card('Chart')} alt ="" src="/assets/Richdata.png" />
 		</div>;
 }
 

@@ -23,8 +23,7 @@ class CentralPart extends Component {
             if (event.icon === 'music') return(<MiddleCardMusic event={event} key={index}/>)
             if (event.icon === 'fridge') return(<MiddleCardFridge event={event} key={index}/>)
             if (event.icon === 'cam') return(<LargeCriticalCardCam event={event} key={index}/>)
-            return null;
-            
+            return null;            
         })
         return (
             <div className="central-part">
