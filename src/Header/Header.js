@@ -1,26 +1,24 @@
 import React from 'react';
 import './Header.css';
+import { Bem } from '@bem-react/core';
 import { cn } from '@bem-react/classname';
 
-const logo = cn('Logo');
-const menuIcon = cn('MenuIcon');
-const menu = cn('Menu');
+const header = cn('Header');
+
 
 function Header() {
     const list = ['События','Сводка','Устройства','Сценарии'];
-    const listItems = list.map(elem => <li key={elem}><a href="/">{elem}</a></li>);
-    return (
-        <header>
-            <div className={logo()}></div>
-            <label htmlFor="menu" className={menuIcon()}></label>
-            <input type="checkbox" className={menu()} defaultChecked={false} id="menu"></input>
-            <nav>
-                <ul>
-                    {listItems}
-                </ul>
-            </nav>
-        </header>
-    )
+    const listItems = list.map(elem => <li key={elem} className={header('MenuItem')}><a href="/">{elem}</a></li>);
+    return <Bem block="Header" tag="header">
+			<Bem block="Header" elem="Logo" />
+			<Bem block="Header" elem="MenuIcon" htmlFor="menu" tag="label" />
+			<Bem block="Header" elem="Menu" defaultChecked={false} id="menu" type="checkbox" tag="input" />
+			<Bem block="Nav" tag="nav">
+				<Bem block="Nav" elem="List" tag="ul">
+					{listItems}
+				</Bem>
+			</Bem>
+		</Bem>;
 }
 
 

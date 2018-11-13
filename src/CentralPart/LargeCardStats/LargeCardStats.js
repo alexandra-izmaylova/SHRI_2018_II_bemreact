@@ -4,7 +4,6 @@ import { cn } from '@bem-react/classname';
 
 const card = cn('Card');
 const cardTop = cn('CardTop');
-const cardBottom = cn('CardBottom');
 
 function LargeCardStats(props) {
 	return <div className={card({ size: 'l'})}>

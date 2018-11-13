@@ -1,17 +1,17 @@
-header {
+.Header {
 	display: flex;
 	flex: 0 0 auto;
 	flex-direction: row;
 	align-items: center;
 }
 
-header nav ul {
+.Header .Nav .Nav-List {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-header nav a {
+.Header .Nav a {
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: bold;
@@ -19,154 +19,154 @@ header nav a {
 	opacity: 0.6;
 }
 
-header nav a.active,
-header nav a:hover {
+.Header .Nav a.active,
+.Header .Nav a:hover {
 	opacity: 1.0;
 }
 
-header .Logo {
+.Header .Header-Logo {
 	background: url(assets/logo.svg) no-repeat;
 	background-size: contain;
 	height: 38px;
 	width: 113px;
 }
 
-.Menu {
+.Header-Menu {
 	display: none;
 }
 
 @media screen and (min-width: 729px) {
-  header {
+  .Header {
     padding: 32px 42px;
   }
 }
 
 @media screen and (min-width: 1067px){
-	header nav {
+	.Header .Nav {
 		padding-top: 4px;
 		margin-left: 21px;
 		display: block;
 	}
-	header nav li {
+	.Header .Nav li {
 		display: inline;
 		padding-right: 28px;
 	}
-	header .MenuIcon {
+	.Header .Header-MenuIcon {
 		display: none;
 	}
 }
 
 @media screen and (min-width: 371px) and (max-width: 480px)  {
-	header {
+	.Header {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
 		border-bottom: 1px solid #F0F0F0;
 	}
-	header nav {
+	.Header .Nav {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	header .MenuIcon {
+	.Header .Header-MenuIcon {
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 14px;
 		height: 14px;
 	}
-	.Menu:checked+nav {
+	.Header-Menu:checked+.Nav {
 		display: block;
 	}
-	header nav li {
+	.Header .Nav li {
 		padding-top: 16px;
 	}
 }
 
 @media screen and (min-width: 320px) and (max-width: 370px)  {
-	header {
+	.Header {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
 		border-bottom: 1px solid #F0F0F0;
 	}
-	header nav {
+	.Header .Nav {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	header .MenuIcon {
+	.Header .Header-MenuIcon {
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 14px;
 		height: 14px;
 	}
-	.Menu:checked+nav {
+	.Header-Menu:checked+.Nav {
 		display: block;
 	}
-	header nav li {
+	.Header .Nav li {
 		padding-top: 16px;
 	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 630px)  {
-	header {
+	.Header {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
 		border-bottom: 1px solid #F0F0F0;
 	}
-	header nav {
+	.Header .Nav {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	header .MenuIcon{
+	.Header .Header-MenuIcon{
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 14px;
 		height: 14px;
 	}
-	.Menu:checked+nav {
+	.Header-Menu:checked+.Nav {
 		display: block;
 	}
-	header nav li {
+	.Header .Nav li {
 		padding-top: 16px;
 	}
 }
 
 @media screen and (min-width: 729px) and (max-width: 1066px) {
-	header nav {
+	.Header .Nav {
 		padding-top: 4px;
 		margin-left: 21px;
 		display: block;
 	}
-	header nav li {
+	.Header .Nav li {
 		display: inline;
 		padding-right: 28px;
 	}
-	header .MenuIcon {
+	.Header .Header-MenuIcon {
 		display: none;
 	}
 }
 
 @media screen and (min-width: 631px) and (max-width: 728px) {
-	header {
+	.Header {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
 		border-bottom: 1px solid #F0F0F0;
 	}
-	header nav {
+	.Header .Nav {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	header .MenuIcon {
+	.Header .Header-MenuIcon {
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 16px;
 		height: 14px;
 	}
-	.Menu:checked+nav {
+	.Header-Menu:checked+.Nav {
 		display: block;
 	}
-	header nav li {
+	.Header .Nav li {
 		padding-top: 16px;
 	}
 }
