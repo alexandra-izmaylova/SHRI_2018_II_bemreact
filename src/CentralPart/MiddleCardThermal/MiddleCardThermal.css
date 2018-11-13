@@ -43,42 +43,7 @@
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 630px)  {
-	.left_flex {
-		font-size: 14px;
-	}
-
-	.right_flex {
-		font-size: 14px;
-	}
-
-	.card-flex {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin-top: 20px;
-	}
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 370px)  {
-	.left_flex {
-		font-size: 14px;
-	}
-
-	.right_flex {
-		font-size: 14px;
-	}
-
-	.card-flex {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin-top: 20px;
-	}
-}
-
-@media screen and (min-width: 371px) and (max-width: 480px)  {
+@media screen and (min-width: 320px) and (max-width: 630px)  {
 	.left_flex {
 		font-size: 14px;
 	}

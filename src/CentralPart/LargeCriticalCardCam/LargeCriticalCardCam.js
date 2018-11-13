@@ -21,18 +21,6 @@ function LargeCriticalCardCam (props) {
 				<div className="container_image">
 					<img className="camera" alt="" src="/assets/image.jpg" />
 				</div>
-				<div className="user_tools">
-					<div className="brightness">
-						<div className="brightness_name" id="brightness_feedback">
-							Яркость:&nbsp;100%
-						</div>
-					</div>
-					<div className="zoom">
-						<div className="zoom_name" id="zoom_feedback">
-							Масштаб:&nbsp;1.0
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>;
 }

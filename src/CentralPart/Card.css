@@ -73,6 +73,12 @@
 	letter-spacing: 0;
 }
 
+.description_size-l {
+	font-size: 24px;
+	color: #000000;
+	margin-top: 25px;
+	letter-spacing: 0;
+}
 
 .card_type-critical {
     background-color: #da5443;
@@ -119,6 +125,11 @@
 		font-size: 16px;
 		margin-top: 12px;
     }	
+
+    .description_size-l {
+		font-size: 18px;
+		margin-top: 12px;
+	}
     
 	.card_type-critical {
     	background-color: #da5443;
@@ -148,6 +159,11 @@
 		margin-top: 12px;
     }
     
+    .description_size-l {
+		font-size: 20px;
+		margin-top: 12px;
+    }
+    
     .devices_and_time {
 		font-size: 16px;
 		margin-top: 12px;
@@ -165,7 +181,11 @@
     .card_size-s {
 	    grid-column: span 2;
     }
-    
+        
+    .card_size-m {
+	    grid-column: span 4;
+	}
+
     .card_size-l {
 	    grid-column: span 4;
 	    grid-row: span 3;
@@ -180,10 +200,12 @@
 		font-size: 16px;
 		margin-top: 12px;
     }
-    
-    	.card_size-m {
-	    grid-column: span 4;
+
+    .description_size-l {
+		font-size: 18px;
+		margin-top: 12px;
 	}
+
 	.devices_and_time {
 		font-size: 14px;
 		margin-top: 12px;
@@ -208,6 +230,10 @@
     .card_size-s {
 	    grid-column: span 4;
     }
+
+    .card_size-m {
+	    grid-column: span 4;
+	}
     
     .card_size-l {
 	    grid-column: span 4;
@@ -224,9 +250,11 @@
 		margin-top: 12px;
     }
     
-    	.card_size-m {
-	    grid-column: span 4;
+    .description_size-l {
+		font-size: 16px;
+		margin-top: 12px;
 	}
+    
 	.devices_and_time {
 		font-size: 12px;
 		margin-top: 12px;
@@ -252,6 +280,10 @@
 	    grid-column: span 4;
     }
 
+    .card_size-m {
+	    grid-column: span 4;
+    }
+    
     .card_size-l {
 	    grid-column: span 4;
 	    grid-row: span 3;
@@ -267,8 +299,9 @@
 		margin-top: 12px;
     }
     
-    	.card_size-m {
-	    grid-column: span 4;
+    .description_size-l {
+		font-size: 16px;
+		margin-top: 12px;
 	}
     
 	.devices_and_time {

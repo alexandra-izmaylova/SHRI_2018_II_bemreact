@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
     const list = ['Помощь','Обратная связь','Разработчикам','Условия использования'];
-    const listItem = list.map(elem => <li key={elem}><a href="#">{elem}</a></li>);
+    const listItem = list.map(elem => <li key={elem}><a href="/">{elem}</a></li>);
     return (
         <footer>
             <nav>

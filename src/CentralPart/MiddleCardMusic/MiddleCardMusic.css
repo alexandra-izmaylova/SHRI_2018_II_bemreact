@@ -228,6 +228,89 @@
 }
 
 
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+	.song_and_range {
+		margin-left: 12px;
+	}
+
+	.name_of_the_song {
+		font-size: 14px;
+	}
+
+	.control_panel {
+		margin-top: 20px;
+	}
+
+	.details {
+		font-size: 12px;
+	}
+
+	.next {
+		width: 40px;
+		height: 40px;
+		padding-right: 5px;
+		padding-left: 20px;
+	}
+
+	.prev {
+		width: 40px;
+		height: 40px;
+	}
+
+	.range {
+		padding-right: 20px;
+	}
+
+	.range_1 {
+		padding-right: 20px;
+	}
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 630px)  {
+	.song_and_range {
+		margin-left: 12px;
+	}
+
+	.name_of_the_song {
+		font-size: 14px;
+	}
+
+	.control_panel {
+		margin-top: 20px;
+	}
+
+	.details {
+		font-size: 12px;
+	}
+
+	.next {
+		width: 50px;
+		height: 50px;
+		padding-right: 5px;
+		padding-left: 30px;
+	}
+
+	.prev {
+		width: 50px;
+		height: 50px;
+	}
+
+	.range {
+		padding-right: 20px;
+	}
+
+	.range_1 {
+		padding-right: 20px;
+	}
+
+}
+
+
 @media screen and (min-width: 631px) and (max-width: 728px) {
 	.song_and_range {
 		margin-left: 12px;
@@ -286,124 +369,6 @@
 	.prev {
 		width: 40px;
 		height: 40px;
-	}
-
-	.range_1 {
-		padding-right: 20px;
-	}
-
-}
-
-
-@media screen and (min-width: 481px) and (max-width: 630px)  {
-	.song_and_range {
-		margin-left: 12px;
-	}
-
-	.name_of_the_song {
-		font-size: 14px;
-	}
-
-	.control_panel {
-		margin-top: 20px;
-	}
-
-	.details {
-		font-size: 12px;
-	}
-
-	.next {
-		width: 50px;
-		height: 50px;
-		padding-right: 5px;
-		padding-left: 30px;
-	}
-
-	.prev {
-		width: 50px;
-		height: 50px;
-	}
-
-	.range {
-		padding-right: 20px;
-	}
-
-	.range_1 {
-		padding-right: 20px;
-	}
-
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 370px)  {
-	.song_and_range {
-		margin-left: 12px;
-	}
-
-	.name_of_the_song {
-		font-size: 14px;
-	}
-
-	.control_panel {
-		margin-top: 20px;
-	}
-
-	.details {
-		font-size: 12px;
-	}
-
-	.next {
-		width: 40px;
-		height: 40px;
-		padding-right: 5px;
-		padding-left: 20px;
-	}
-
-	.prev {
-		width: 40px;
-		height: 40px;
-	}
-
-	.range {
-		padding-right: 20px;
-	}
-
-	.range_1 {
-		padding-right: 20px;
-	}
-}
-
-@media screen and (min-width: 371px) and (max-width: 480px)  {
-	.song_and_range {
-		margin-left: 12px;
-	}
-
-	.name_of_the_song {
-		font-size: 14px;
-	}
-
-	.control_panel {
-		margin-top: 20px;
-	}
-
-	.details {
-		font-size: 12px;
-	}
-
-	.next {
-		width: 40px;
-		height: 40px;
-		padding-right: 5px;
-		padding-left: 20px;
-	}
-
-	.prev {
-		width: 40px;
-		height: 40px;
-	}
-
-	.range {
-		padding-right: 20px;
 	}
 
 	.range_1 {

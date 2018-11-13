@@ -1,5 +1,4 @@
 import React from 'react';
-import './MiddleCriticalCardAc.css';
 
 
 function MiddleCriticalCardAc(props) {

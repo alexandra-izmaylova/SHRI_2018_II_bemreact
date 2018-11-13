@@ -30,41 +30,6 @@
 }
 
 
-
-@media screen and (min-width: 631px) and (max-width: 728px) {
-	.buttons {
-		margin-top: 20px;
-	}
-
-	.button {
-		width: 124px;
-		height: 50px;	
-		font-size: 16px;
-    }
-    
-	.button-no {	
-		margin-left: 12px;
-	}
-}
-
-
-@media screen and (min-width: 481px) and (max-width: 630px)  {
-	.buttons {
-		margin-top: 20px;
-	}
-
-	.button {
-		width: 124px;
-		height: 50px;	
-		font-size: 16px;
-	}
-
-	.button-no {	
-		margin-left: 12px;
-	}
-}
-
-
 @media screen and (min-width: 320px) and (max-width: 370px)  {
 	.buttons {
 		margin-top: 20px;
@@ -95,5 +60,21 @@
 
 	.button-no {	
 		margin-left: 15px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 728px)  {
+	.buttons {
+		margin-top: 20px;
+	}
+
+	.button {
+		width: 124px;
+		height: 50px;	
+		font-size: 16px;
+	}
+
+	.button-no {	
+		margin-left: 12px;
 	}
 }

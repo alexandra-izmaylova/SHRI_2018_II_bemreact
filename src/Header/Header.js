@@ -3,7 +3,7 @@ import './Header.css';
 
 function Header() {
     const list = ['События','Сводка','Устройства','Сценарии'];
-    const listItems = list.map(elem => <li key={elem}><a href="#">{elem}</a></li>);
+    const listItems = list.map(elem => <li key={elem}><a href="/">{elem}</a></li>);
     return (
         <header>
             <div className="logo"></div>
