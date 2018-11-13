@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Яндекс Дом</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<!-- <header>
+		<div class="logo">
+			<a href="index.html"></a>
+		</div>
+
+		<label for="menu" class="menu_icon"></label>
+		<input type="checkbox" class="menu">
+		<nav>
+			<ul>
+				<li>
+					<a href="#" class="active">События</a>
+				</li>
+				<li>
+					<a href="#">Сводка</a>
+				</li>
+				<li>
+					<a href="#">Устройства</a>
+				</li>
+				<li>
+					<a href="#">Сценарии</a>
+				</li>
+			</ul>
+		</nav>
+	</header> -->
+
+	
+	<div class="central-part">
+		<main>
+			<div class="main-part">
+				<div class="news_line">Лента событий</div>
+				<div class="container">
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Помощь</a>
+					</li>
+					<li>
+						<a href="#">Обратная связь</a>
+					</li>
+					<li>
+						<a href="#">Разработчикам</a>
+					</li>
+					<li>
+						<a href="#">Условия использования</a>
+					</li>
+				</ul>
+			</nav>
+			<p>© 2001-2018 ООО "Яндекс"</p>
+		</footer>
+	</div>
+</body>
+
+<template id="template-card-s">
+	<div class="card card_size-s">
+		<div class="card_top">
+			<img class="icons">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross.svg">
+		</div>
+		<div class="devices" id="source"></div>
+		<div class="time" id="time"></div>
+		<div class="card_bottom">
+			<div class="description_size-m description_size-s"></div>
+		</div>
+	</div>
+</template>
+
+<template id="template-card-m-thermal">
+	<div class="card card_size-m">
+		<div class="card_top">
+			<img class="icons">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross.svg">
+		</div>
+		<div class="devices_and_time">
+			<div class="card-source" id="source"></div>
+			<div class="card-time" id="time"></div>
+		</div>
+		<div class="description_size-m"></div>
+		<div class="card_bottom">
+			<div class="left_flex">
+				<div>Температура:&nbsp; </div>
+				<div class="exact_data"></div>
+			</div>
+			<div class="right_flex">
+				<div>Влажность:&nbsp; </div>
+				<div class="exact_data"></div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template id="template-card-m-fridge">
+	<div class="card card_size-m">
+		<div class="card_top">
+			<img class="icons">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross.svg">
+		</div>
+		<div class="devices_and_time">
+			<div class="card-source" id="source"></div>
+			<div class="card-time" id="time"></div>
+		</div>
+		<div class="description_size-m"></div>
+		<div class="card_bottom">
+			<div class="buttons">
+				<div class="button button-yes">
+					<div class="choice"></div>
+				</div>
+				<div class="button button-no">
+					<div class="choice"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template id="template-card-m-music">
+	<div class="card card_size-m">
+		<div class="card_top">
+			<img class="icons">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross.svg">
+		</div>
+		<div class="devices_and_time">
+			<div class="card-source" id="source"></div>
+			<div class="card-time" id="time"></div>
+		</div>
+		<div class="description_size-m"></div>
+		<div class="music">
+			<img class="album-cover" src="assets/album-cover.png">
+			<div class="song_and_range">
+				<div class="name_of_the_song"></div>
+				<div class="range_and_time">
+					<input type="range" min="0" max="271" step="2" value="50" class="range">
+					<div class="details"></div>
+				</div>
+			</div>
+		</div>
+		<div class="control_panel">
+			<img class="key prev" src="assets/Prev.svg">
+			<img class="key next" src="assets/Prev.svg">
+			<input type="range" min="0" max="271" step="2" value="50" class="range_1">
+			<div class="details"></div>
+		</div>
+	</div>
+</template>
+
+<template id="template-card-m-ac">
+	<div class="card card_size-m card_type-critical">
+		<div class="card_top">
+			<img class="icons">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross-white.svg">
+		</div>
+		<div class="devices_and_time">
+			<div class="card-source" id="source"></div>
+			<div class="card-time" id="time"></div>
+		</div>
+		<div class="card corpus card_bottom">
+			<div class="description"></div>
+		</div>
+	</div>
+</template>
+
+<template id="template-card-l-cam">
+	<div class="card card_size-l card_type-critical">
+		<div class="card_top">
+			<img class="icons" src="assets/cam.svg">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross-white.svg">
+		</div>
+		<div class="devices_and_time">
+			<div class="card-source" id="source"></div>
+			<div class="card-time" id="time"></div>
+		</div>
+		<div class="card corpus">
+			<div class="description"></div>
+			<div class="container_image">
+				<img class="camera" src="assets/image.jpg">
+			</div>
+			<div class="user_tools">
+				<div class="brightness">
+					<div class="brightness_name" id="brightness_feedback">Яркость:&nbsp;100%</div>
+				</div>
+				<div class="zoom">
+					<div class="zoom_name" id="zoom_feedback">Масштаб:&nbsp;1.0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template id="template-card-l-stats">
+	<div class="card card_size-l">
+		<div class="card_top">
+			<img class="icons">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross.svg">
+		</div>
+		<div class="devices_and_time">
+			<div class="card-source" id="source"></div>
+			<div class="card-time" id="time"></div>
+		</div>
+		<div class="description_size-l"></div>
+		<img class="chart" src="assets/Richdata.png">
+	</div>
+</template>
+
+<script type="text/javascript" src="template.js"></script>
+
+</html>
