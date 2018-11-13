@@ -12,7 +12,7 @@
 
 .SongAndRange {
 	display: flex;
-	flex:1;
+	flex: 1;
 	flex-direction: column;
 	justify-content: space-between;
 	margin-left: 16px;
@@ -45,194 +45,182 @@
 }
 
 .range {
-  -webkit-appearance: none; 
-  width: 100%; 
-  background: transparent;
+	-webkit-appearance: none;
+	width: 100%;
+	background: transparent;
 }
 
 .range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 .range:focus {
-  outline: none; 
+	outline: none;
 }
 
 .range::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
+	width: 100%;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
 }
 
-
 .range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 20px;
-  width: 12px;
-  border-radius: 4.5px;
-  background: #D8D8D8;
-  cursor: pointer;
-  margin-top: -7px; 
+	-webkit-appearance: none;
+	height: 20px;
+	width: 12px;
+	border-radius: 4.5px;
+	background: #d8d8d8;
+	cursor: pointer;
+	margin-top: -7px;
 }
 
 .range::-moz-range-thumb {
-  height: 20px;
-  width: 12px;
-  border-radius: 4.5px;
-  background: #D8D8D8;
-  cursor: pointer;
+	height: 20px;
+	width: 12px;
+	border-radius: 4.5px;
+	background: #d8d8d8;
+	cursor: pointer;
 }
 
 .range::-ms-thumb {
-  height: 20px;
-  width: 12px;
-  border-radius: 4.5px;
-  background: #D8D8D8;
-  cursor: pointer;
+	height: 20px;
+	width: 12px;
+	border-radius: 4.5px;
+	background: #d8d8d8;
+	cursor: pointer;
 }
 
-
-
 .range::-webkit-slider-runnable-track {
-  width: 350px;
-  height: 5px;
-  background-color: #979797;
-  cursor: pointer;
-  border: 1px solid #979797;
+	width: 350px;
+	height: 5px;
+	background-color: #979797;
+	cursor: pointer;
+	border: 1px solid #979797;
 }
 
 .range::-moz-range-track {
-  width: 350px;
-  height: 5px;
-  background-color: #979797;
-  cursor: pointer;
-  border: 1px solid #979797;
+	width: 350px;
+	height: 5px;
+	background-color: #979797;
+	cursor: pointer;
+	border: 1px solid #979797;
 }
 
 .range::-ms-track {
-  width: 350px;
-  height: 5px;
-  background-color: #979797;
-  cursor: pointer;
-  border: 1px solid #979797;
+	width: 350px;
+	height: 5px;
+	background-color: #979797;
+	cursor: pointer;
+	border: 1px solid #979797;
 }
 
 .range::-ms-fill-lower {
-  width: 350px;
-  height: 5px;
-  background-color: #979797;
-  cursor: pointer;
-  border: 1px solid #979797;
+	width: 350px;
+	height: 5px;
+	background-color: #979797;
+	cursor: pointer;
+	border: 1px solid #979797;
 }
 
 .range::-ms-fill-upper {
-  width: 350px;
-  height: 5px;
-  background-color: #979797;
-  cursor: pointer;
-  border: 1px solid #979797;
+	width: 350px;
+	height: 5px;
+	background-color: #979797;
+	cursor: pointer;
+	border: 1px solid #979797;
 }
 
-
 .range_1 {
-  -webkit-appearance: none; 
-  width: 267px; 
-  background: transparent; 
+	-webkit-appearance: none;
+	width: 267px;
+	background: transparent;
 }
 
 .range_1::-webkit-slider-thumb {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 .range_1:focus {
-  outline: none; 
+	outline: none;
 }
 
 .range_1::-ms-track {
-  width: 267px;
-  cursor: pointer;
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
+	width: 267px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
 }
 
-
 .range_1::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 26px;
-  background: #605757;
-  cursor: pointer;
-  margin-top: -6px; 
+	-webkit-appearance: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 26px;
+	background: #605757;
+	cursor: pointer;
+	margin-top: -6px;
 }
 
 .range_1::-moz-range-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 26px;
-  background: #605757;
-  cursor: pointer;
+	height: 16px;
+	width: 16px;
+	border-radius: 26px;
+	background: #605757;
+	cursor: pointer;
 }
 
 .range_1::-ms-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 26px;
-  background: #605757;
-  cursor: pointer;
+	height: 16px;
+	width: 16px;
+	border-radius: 26px;
+	background: #605757;
+	cursor: pointer;
 }
 
-
-
 .range_1::-webkit-slider-runnable-track {
-  width: 267px;
-  height: 4px;
-  background-color: #d8d8d8;
-  cursor: pointer;
-  border-radius: 2px;
+	width: 267px;
+	height: 4px;
+	background-color: #d8d8d8;
+	cursor: pointer;
+	border-radius: 2px;
 }
 
 .range_1::-moz-range-track {
-  width: 267px;
-  height: 4px;
-  background-color: #d8d8d8;
-  cursor: pointer;
-  border-radius: 2px;
+	width: 267px;
+	height: 4px;
+	background-color: #d8d8d8;
+	cursor: pointer;
+	border-radius: 2px;
 }
 
 .range_1::-ms-track {
-  width: 267px;
-  height: 4px;
-  background-color: #d8d8d8;
-  cursor: pointer;
-  border-radius: 2px;
+	width: 267px;
+	height: 4px;
+	background-color: #d8d8d8;
+	cursor: pointer;
+	border-radius: 2px;
 }
 
 .range_1::-ms-fill-lower {
-  width: 267px;
-  height: 4px;
-  background-color: #d8d8d8;
-  cursor: pointer;
-  border-radius: 2px;
+	width: 267px;
+	height: 4px;
+	background-color: #d8d8d8;
+	cursor: pointer;
+	border-radius: 2px;
 }
 
 .range_1::-ms-fill-upper {
-  width: 267px;
-  height: 4px;
-  background-color: #d8d8d8;
-  cursor: pointer;
-  border-radius: 2px;
+	width: 267px;
+	height: 4px;
+	background-color: #d8d8d8;
+	cursor: pointer;
+	border-radius: 2px;
 }
 
-
-
-
-
-
-@media screen and (min-width: 320px) and (max-width: 480px)  {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 	.SongAndRange {
 		margin-left: 12px;
 	}
@@ -270,8 +258,7 @@
 	}
 }
 
-
-@media screen and (min-width: 481px) and (max-width: 630px)  {
+@media screen and (min-width: 481px) and (max-width: 630px) {
 	.SongAndRange {
 		margin-left: 12px;
 	}
@@ -307,9 +294,7 @@
 	.range_1 {
 		padding-right: 20px;
 	}
-
 }
-
 
 @media screen and (min-width: 631px) and (max-width: 728px) {
 	.SongAndRange {
@@ -347,7 +332,6 @@
 	.range_1 {
 		padding-right: 20px;
 	}
-
 }
 
 @media screen and (min-width: 729px) and (max-width: 1066px) {

@@ -1,4 +1,4 @@
-.Card{
+.Card {
 	border-radius: 20px;
 	background-color: #fafafa;
 	padding: 20px;
@@ -58,7 +58,7 @@
 	background-color: #fafafa;
 	padding: 20px;
 	margin-top: 20px;
-} 
+}
 
 .Card_type_critical:hover .CardBottom-Corpus {
 	background-color: #f3f3f3;
@@ -70,7 +70,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	font-size: 18px;
-	color: #FFFFFF;
+	color: #ffffff;
 	margin-top: 16px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -144,7 +144,7 @@
 }
 
 @media screen and (min-width: 631px) and (max-width: 728px) {
-	.Card{
+	.Card {
 		padding: 15px;
 	}
 
@@ -153,14 +153,12 @@
 		font-size: 16px;
 	}
 
-	.CardBottom-Description
- 	{
+	.CardBottom-Description {
 		font-size: 16px;
 		margin-top: 12px;
 	}
 
-	.Card-Description
- 	{
+	.Card-Description {
 		font-size: 16px;
 		margin-top: 12px;
 	}
@@ -183,13 +181,13 @@
 
 	.Card_type_critical .CardTop-Title {
 		font-size: 16px;
-    }
-    
-    .CardBottom-Corpus {
-	    padding: 15px;
-	    margin-top: 15px;
 	}
-	
+
+	.CardBottom-Corpus {
+		padding: 15px;
+		margin-top: 15px;
+	}
+
 	.Card_type_critical .Card-Info {
 		font-size: 14px;
 		margin-top: 12px;
@@ -203,14 +201,12 @@
 		font-size: 20px;
 	}
 
-	.CardBottom-Description
- 	{
+	.CardBottom-Description {
 		font-size: 18px;
 		margin-top: 12px;
 	}
 
-	.Card-Description
- 	{
+	.Card-Description {
 		font-size: 18px;
 		margin-top: 12px;
 	}
@@ -226,9 +222,9 @@
 	}
 	.Card_type_critical .CardTop-Title {
 		font-size: 20px;
-    }
-    
-    .Card_type_critical .Card-Info {
+	}
+
+	.Card_type_critical .Card-Info {
 		font-size: 14px;
 	}
 }
@@ -242,7 +238,7 @@
 		grid-column: span 4;
 	}
 
-	.Card_size_l  {
+	.Card_size_l {
 		grid-column: span 4;
 		grid-row: span 3;
 	}
@@ -252,14 +248,12 @@
 		font-size: 16px;
 	}
 
-	.CardBottom-Description
- 	{
+	.CardBottom-Description {
 		font-size: 16px;
 		margin-top: 12px;
 	}
 
-	.Card-Description
- 	{
+	.Card-Description {
 		font-size: 16px;
 		margin-top: 12px;
 	}
@@ -282,19 +276,19 @@
 
 	.Card_type_critical .CardTop-Title {
 		font-size: 16px;
-    }
-    
-    .CardBottom-Corpus {
-	    padding: 15px;
-	    margin-top: 15px;
+	}
+
+	.CardBottom-Corpus {
+		padding: 15px;
+		margin-top: 15px;
 	}
 
 	.Card_type_critical.Card_size_m .CardBottom-Description {
 		padding: 15px;
-	    margin-top: 15px;
+		margin-top: 15px;
 		font-size: 16px;
 	}
-	
+
 	.Card_type_critical .Card-Info {
 		font-size: 14px;
 		margin-top: 12px;
@@ -311,7 +305,7 @@
 		grid-column: span 4;
 	}
 
-	.Card_size_l  {
+	.Card_size_l {
 		grid-column: span 4;
 		grid-row: span 3;
 	}
@@ -321,19 +315,17 @@
 		font-size: 16px;
 	}
 
-	.CardBottom-Description
- 	{
+	.CardBottom-Description {
 		font-size: 14px;
 		margin-top: 12px;
 	}
 
-	.Card-Description
- 	{
+	.Card-Description {
 		font-size: 14px;
 		margin-top: 12px;
 	}
 
-	.Card-size_l .Card-Description{
+	.Card-size_l .Card-Description {
 		font-size: 16px;
 		margin-top: 12px;
 	}
@@ -351,19 +343,18 @@
 
 	.Card_type_critical .CardTop-Title {
 		font-size: 16px;
-    }
-    
-    .CardBottom-Corpus {
-	    padding: 15px;
-	    margin-top: 15px;
 	}
-	
+
+	.CardBottom-Corpus {
+		padding: 15px;
+		margin-top: 15px;
+	}
+
 	.Card_type_critical .Card-Info {
 		font-size: 14px;
 		margin-top: 12px;
 		padding: 0;
 	}
-
 }
 
 @media screen and (min-width: 371px) and (max-width: 480px) {
@@ -385,14 +376,12 @@
 		font-size: 16px;
 	}
 
-	.CardBottom-Description
- 	{
+	.CardBottom-Description {
 		font-size: 14px;
 		margin-top: 12px;
 	}
 
-	.Card-Description
- 	{
+	.Card-Description {
 		font-size: 14px;
 		margin-top: 12px;
 	}
@@ -415,23 +404,22 @@
 
 	.Card_type_critical .CardTop-Title {
 		font-size: 16px;
-    }
-    
-    .CardBottom-Corpus {
-	    padding: 15px;
-	    margin-top: 15px;
+	}
+
+	.CardBottom-Corpus {
+		padding: 15px;
+		margin-top: 15px;
 	}
 
 	.Card_type_critical.Card_size_m .CardBottom-Description {
 		font-size: 16px;
 		padding: 15px;
-	    margin-top: 15px;
+		margin-top: 15px;
 	}
-	
+
 	.Card_type_critical .Card-Info {
 		font-size: 14px;
 		margin-top: 12px;
 		padding: 0;
-	}	
-
+	}
 }

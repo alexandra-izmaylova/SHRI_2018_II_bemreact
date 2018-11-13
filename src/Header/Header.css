@@ -5,26 +5,7 @@
 	align-items: center;
 }
 
-.Header .Nav .Nav-List {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.Header .Nav a {
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: bold;
-	color: #333333;
-	opacity: 0.6;
-}
-
-.Header .Nav a.active,
-.Header .Nav a:hover {
-	opacity: 1.0;
-}
-
-.Header .Header-Logo {
+.Header-Logo {
 	background: url(assets/logo.svg) no-repeat;
 	background-size: contain;
 	height: 38px;
@@ -35,109 +16,134 @@
 	display: none;
 }
 
-@media screen and (min-width: 729px) {
-  .Header {
-    padding: 32px 42px;
-  }
+.HeaderMenu .List {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
-@media screen and (min-width: 1067px){
-	.Header .Nav {
+.HeaderMenu .List-Item a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	opacity: 0.6;
+}
+
+.HeaderMenu .List-Item a.active,
+.HeaderMenu .List-Item a:hover {
+	opacity: 1;
+}
+
+@media screen and (min-width: 729px) {
+	.Header {
+		padding: 32px 42px;
+	}
+}
+
+@media screen and (min-width: 1067px) {
+	.Header-MenuIcon {
+		display: none;
+	}
+
+	.HeaderMenu {
 		padding-top: 4px;
 		margin-left: 21px;
 		display: block;
 	}
-	.Header .Nav li {
+	.HeaderMenu .List-Item {
 		display: inline;
 		padding-right: 28px;
 	}
-	.Header .Header-MenuIcon {
-		display: none;
-	}
 }
 
-@media screen and (min-width: 371px) and (max-width: 480px)  {
+@media screen and (min-width: 371px) and (max-width: 480px) {
 	.Header {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
-		border-bottom: 1px solid #F0F0F0;
+		border-bottom: 1px solid #f0f0f0;
 	}
-	.Header .Nav {
+	.HeaderMenu {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	.Header .Header-MenuIcon {
+
+	.Header-MenuIcon {
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 14px;
 		height: 14px;
 	}
-	.Header-Menu:checked+.Nav {
+	.Header-Menu:checked + .HeaderMenu {
 		display: block;
 	}
-	.Header .Nav li {
+	.HeaderMenu .List-Item {
 		padding-top: 16px;
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 370px)  {
+@media screen and (min-width: 320px) and (max-width: 370px) {
 	.Header {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
-		border-bottom: 1px solid #F0F0F0;
+		border-bottom: 1px solid #f0f0f0;
 	}
-	.Header .Nav {
+	.HeaderMenu {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	.Header .Header-MenuIcon {
+
+	.Header-MenuIcon {
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 14px;
 		height: 14px;
 	}
-	.Header-Menu:checked+.Nav {
+
+	.Header-Menu:checked + .HeaderMenu {
 		display: block;
 	}
-	.Header .Nav li {
+
+	.HeaderMenu .List-Item {
 		padding-top: 16px;
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 630px)  {
+@media screen and (min-width: 481px) and (max-width: 630px) {
 	.Header {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
-		border-bottom: 1px solid #F0F0F0;
+		border-bottom: 1px solid #f0f0f0;
 	}
-	.Header .Nav {
+	.HeaderMenu {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	.Header .Header-MenuIcon{
+
+	.Header-MenuIcon {
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 14px;
 		height: 14px;
 	}
-	.Header-Menu:checked+.Nav {
+	.Header-Menu:checked + .HeaderMenu {
 		display: block;
 	}
-	.Header .Nav li {
+	.HeaderMenu .List-Item {
 		padding-top: 16px;
 	}
 }
 
 @media screen and (min-width: 729px) and (max-width: 1066px) {
-	.Header .Nav {
+	.HeaderMenu {
 		padding-top: 4px;
 		margin-left: 21px;
 		display: block;
 	}
-	.Header .Nav li {
+	.HeaderMenu .List-Item {
 		display: inline;
 		padding-right: 28px;
 	}
@@ -151,23 +157,22 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 12px 20px;
-		border-bottom: 1px solid #F0F0F0;
+		border-bottom: 1px solid #f0f0f0;
 	}
-	.Header .Nav {
+	.HeaderMenu {
 		display: none;
 		width: 100%;
 		padding-bottom: 8px;
 	}
-	.Header .Header-MenuIcon {
+	.Header-MenuIcon {
 		background: url(assets/icon_list_m@1x.svg) no-repeat;
 		width: 16px;
 		height: 14px;
 	}
-	.Header-Menu:checked+.Nav {
+	.Header-Menu:checked + .HeaderMenu {
 		display: block;
 	}
-	.Header .Nav li {
+	.HeaderMenu .List-Item {
 		padding-top: 16px;
 	}
 }
-

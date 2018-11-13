@@ -1,26 +1,33 @@
 import React from 'react';
 import './Header.css';
-import { Bem } from '@bem-react/core';
-import { cn } from '@bem-react/classname';
-
-const header = cn('Header');
-
+import { Bem } from 'bem-react-core';
 
 function Header() {
-    const list = ['События','Сводка','Устройства','Сценарии'];
-    const listItems = list.map(elem => <li key={elem} className={header('MenuItem')}><a href="/">{elem}</a></li>);
-    return <Bem block="Header" tag="header">
+	const list = ['События', 'Сводка', 'Устройства', 'Сценарии'];
+	const listItems = list.map(elem => (
+		<Bem key={elem} block="List" elem="Item" tag="li">
+			<a href="/">{elem}</a>
+		</Bem>
+	));
+	return (
+		<Bem block="Header" tag="header">
 			<Bem block="Header" elem="Logo" />
 			<Bem block="Header" elem="MenuIcon" htmlFor="menu" tag="label" />
-			<Bem block="Header" elem="Menu" defaultChecked={false} id="menu" type="checkbox" tag="input" />
-			<Bem block="Nav" tag="nav">
-				<Bem block="Nav" elem="List" tag="ul">
+			<Bem
+				block="Header"
+				elem="Menu"
+				defaultChecked={false}
+				id="menu"
+				type="checkbox"
+				tag="input"
+			/>
+			<Bem block="HeaderMenu" tag="nav">
+				<Bem block="List" tag="ul">
 					{listItems}
 				</Bem>
 			</Bem>
-		</Bem>;
+		</Bem>
+	);
 }
 
-
-
-export {Header}
+export { Header };

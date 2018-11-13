@@ -7,25 +7,27 @@ const cardTop = cn('CardTop');
 const cardBottom = cn('CardBottom');
 const buttons = cn('Buttons');
 
-
 function MiddleCardFridge(props) {
-	return <div className={card({ size: 'm' })}>
+	return (
+		<div className={card({ size: 'm' })}>
 			<div className={cardTop()}>
-				<img className={cardTop('Icon')} alt="" src={`/assets/${props.event.icon}.svg`} />
+				<img
+					className={cardTop('Icon')}
+					alt=""
+					src={`/assets/${props.event.icon}.svg`}
+				/>
 				<div className={cardTop('Title')}>{props.event.title}</div>
-				<img className={cardTop('Cross')} alt="" src="/assets/cross.svg" />
+				<img
+					className={cardTop('Cross')}
+					alt=""
+					src="/assets/cross.svg"
+				/>
 			</div>
 			<div className={card('Info')}>
-				<div>
-					{props.event.source}
-				</div>
-				<div>
-					{props.event.time}
-				</div>
+				<div>{props.event.source}</div>
+				<div>{props.event.time}</div>
 			</div>
-			<div className={card('Description')}>
-				{props.event.description}
-			</div>
+			<div className={card('Description')}>{props.event.description}</div>
 			<div className={cardBottom()}>
 				<div className={buttons()}>
 					<div className={buttons('ButtonYes')}>
@@ -40,7 +42,8 @@ function MiddleCardFridge(props) {
 					</div>
 				</div>
 			</div>
-		</div>;
+		</div>
+	);
 }
-        
-export {MiddleCardFridge};
+
+export { MiddleCardFridge };
